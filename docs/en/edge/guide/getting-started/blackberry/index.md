@@ -75,13 +75,13 @@ Download the latest copy of [Cordova](http://phonegap.com/download) and extract 
 - Open up the project.properties file with your favorite editor and edit the entries for the WebWorks SDKs you are using. For example...
 
 BlackBerry 10 (QNX)
-`qnx.bbwp.dir=C:\\Program Files (x86)\\Research In Motion\\BlackBerry 10 WebWorks SDK 1.0.2.9`
+-`qnx.bbwp.dir=C:\\Program Files (x86)\\Research In Motion\\BlackBerry 10 WebWorks SDK 1.0.2.9`
 
 BlackBerry PlayBook
-`playbook.bbwp.dir=C:\\Program Files\\Research In Motion\\BlackBerry WebWorks SDK for TabletOS 2.1.0.6\\bbwp`
+-`playbook.bbwp.dir=C:\\Program Files\\Research In Motion\\BlackBerry WebWorks SDK for TabletOS 2.1.0.6\\bbwp`
 
 BlackBerry Smartphone (OS5-7)
-`blackberry.bbwp.dir=C:\\Program Files\\Research In Motion\\BlackBerry WebWorks Packager`
+-`blackberry.bbwp.dir=C:\\Program Files\\Research In Motion\\BlackBerry WebWorks Packager`
 
 
 6.  Hello World
