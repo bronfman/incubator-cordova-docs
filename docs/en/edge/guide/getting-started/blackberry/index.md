@@ -42,7 +42,8 @@ WebWorks applications can ONLY be deployed to the following BlackBerry platforms
 
 2.  Install the WebWorks SDK
 -------------------------
-## BlackBerry 10
+
+** BlackBerry 10 **
 
 
 
