@@ -110,19 +110,32 @@ For instructions on installing simulators, please visit the following link(s):
 - [BlackBerry Smartphone](https://developer.blackberry.com/html5/documentation/run_your_app_on_smartphone_sim_1876976_11.html)
 
 - Open the project.properties file with your favorite editor and customize the following properties.
-    - BlackBerry 10
-        - `qnx.sim.ip`
-        - `qnx.sim.password`
+    
+BlackBerry 10
+- `qnx.sim.ip`
+- `qnx.sim.password`
+- Note: IP address of simulator obtained when placing the simulator in developer mode through simulator security settings. Simulator password can be set through simulator security settings.
 
-    - Playbook
-        - `playbook.sim.ip` : IP address of simulator obtained when placing the simulator in developer mode through simulator security settings.
-        - `playbook.sim.password` : Simulator password which can be set through simulator security settings.
+Playbook
+- `playbook.sim.ip` : 
+- `playbook.sim.password`
+- Note: IP address of simulator obtained when placing the simulator in developer mode through simulator security settings. Simulator password can be set through simulator security settings.
 
-    - Smartphone (Optional)
-        - `blackberry.sim.dir` : Path to directory containing simulator. On windows file separator '\' must be escaped '\\\'.
-        - `blackberry.sim.bin` : Name of the simulator executable in the specified directory.
+- Smartphone (Optional)
+- `blackberry.sim.dir` 
+- `blackberry.sim.bin`
+- Note: On windows file separator '\' must be escaped when specifying directories.  For example `C:\\Program Files\\BlackBerry\\Simulator`.  
 
-- While in your project directory, in command prompt/terminal type `ant target load-simulator`. Replace `target` with either `qnx`, `playbook`, or `blackberry`. Note, for BlackBerry 10 and PlayBook, the simulator virtual image must already be started. 
+While in your project directory, in command prompt/terminal type `ant target load-simulator`. Replace `target` with either `qnx`, `playbook`, or `blackberry`. Note, for BlackBerry 10 and PlayBook, the simulator virtual image must already be started.  For example...
+
+BlackBerry 10 (QNX)
+`ant qnx load-simulator`
+
+BlackBerry PlayBook
+`ant playbook load-simulator`
+
+BlackBerry Smartphone (OS5-7)
+`ant blackberry load-simulator`
 
 - The application will be installed to the homescreen of the simulator. Note, on BlackBerry OS 5 the application is installed in the Downloads folder.
 
