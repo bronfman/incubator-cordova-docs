@@ -121,7 +121,7 @@ Playbook
 - `playbook.sim.password`
 - Note: IP address of simulator obtained when placing the simulator in developer mode through simulator security settings. Simulator password can be set through simulator security settings.
 
-- Smartphone (Optional)
+Smartphone (Optional)
 - `blackberry.sim.dir` 
 - `blackberry.sim.bin`
 - Note: On windows file separator '\' must be escaped when specifying directories.  For example `C:\\Program Files\\BlackBerry\\Simulator`.  
@@ -137,7 +137,8 @@ BlackBerry PlayBook
 BlackBerry Smartphone (OS5-7)
 `ant blackberry load-simulator`
 
-- The application will be installed to the homescreen of the simulator. Note, on BlackBerry OS 5 the application is installed in the Downloads folder.
+The application will be installed to the homescreen of the simulator. Note, on BlackBerry OS 5 the application is installed in the Downloads folder.
+
 
 5B.  Deploy to Device (Windows and Mac)
 --------------------------------------
