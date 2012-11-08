@@ -65,44 +65,66 @@ Once you receive your Signing Keys, they'll need to be setup. To lean how to set
 Download the latest copy of [Cordova](http://phonegap.com/download) and extract its contents to your local machine.
 
 
-3.  Setup New Project
+5.  Setup New Project
 --------------------
 
 - Open up a command prompt/terminal and navigate to where you extracted Cordova.
 - There is a directory for each platform that Cordova supports.  CD into the blackberry directory.
 - The blackberry directory contains two directories, `sample` and `www`.  The `sample` folder contains a complete Cordova project.  Copy the `sample` folder to another location on your computer.
 - Change to the newly created directory.
-- Open up the project.properties file with your favorite editor and edit the entries for the WebWorks SDKs you are using, below are examples.
+- Open up the project.properties file with your favorite editor and edit the entries for the WebWorks SDKs you are using. For example...
 
-BlackBerry 10
-- qnx.bbwp.dir=C:\\Program Files (x86)\\Research In Motion\\BlackBerry 10 WebWorks SDK 1.0.2.9
+BlackBerry 10 (QNX)
+`qnx.bbwp.dir=C:\\Program Files (x86)\\Research In Motion\\BlackBerry 10 WebWorks SDK 1.0.2.9`
 
 BlackBerry PlayBook
-- playbook.bbwp.dir=C:\\Program Files\\Research In Motion\\BlackBerry WebWorks SDK for TabletOS 2.1.0.6\\bbwp
+`playbook.bbwp.dir=C:\\Program Files\\Research In Motion\\BlackBerry WebWorks SDK for TabletOS 2.1.0.6\\bbwp`
 
 BlackBerry Smartphone (OS5-7)
-- blackberry.bbwp.dir=C:\\Program Files\\Research In Motion\\BlackBerry WebWorks Packager
+`blackberry.bbwp.dir=C:\\Program Files\\Research In Motion\\BlackBerry WebWorks Packager`
 
 
-4.  Hello World
+6.  Hello World
 --------------
 
-Build the Cordova sample project by typing `ant target build` in your command prompt/terminal while you are in your project's directory. Replace `target` with either `blackberry` or `playbook`. Note this is a sample Cordova project and not a basic hello world application. The provided index.html in the www contains example usages of many of the Cordova API.
+Build the Cordova sample project by typing `ant target build` in your command prompt/terminal while you are in your project's directory. Replace `target` with either `qnx` `playbook` or `blackberry`. For example...
+
+BlackBerry 10 (QNX)
+`ant qnx build`
+
+BlackBerry PlayBook
+`ant playbook build`
+
+BlackBerry Smartphone (OS5-7)
+`ant blackberry build`
+
 
 5A.  Deploy to Simulator
 --------------------------------------
 
-BlackBerry smartphone simulators are only available on Windows. PlayBook simulators require VMWare Player (Windows) or VMWare Fusion (Mac OS X). The WebWorks SDK provides a default simulator. Additional simulators are [available](http://us.blackberry.com/developers/resources/simulators.jsp).
+BlackBerry smartphone simulators are only available on Windows. BlackBerry 10, and PlayBook simulators require VMWare Player (Windows) or VMWare Fusion (Mac OS X). The WebWorks SDK provides a default simulator. Additional simulators are [available](http://us.blackberry.com/developers/resources/simulators.jsp).
+
+For instructions on installing simulators, please visit the following link(s):
+- [BlackBerry 10](https://developer.blackberry.com/html5/documentation/using_the_bb10_simulator_2008466_11.html)
+- [BlackBerry PlayBook](https://developer.blackberry.com/html5/documentation/using_the_tablet_simulator_1866980_11.html)
+- [BlackBerry Smartphone](https://developer.blackberry.com/html5/documentation/run_your_app_on_smartphone_sim_1876976_11.html)
 
 - Open the project.properties file with your favorite editor and customize the following properties.
-    - Smartphone (Optional)
-        - `blackberry.sim.dir` : Path to directory containing simulator. On windows file separator '\' must be escaped '\\\'.
-        - `blackberry.sim.bin` : Name of the simulator executable in the specified directory.
+    - BlackBerry 10
+        - `qnx.sim.ip`
+        - `qnx.sim.password`
+
     - Playbook
         - `playbook.sim.ip` : IP address of simulator obtained when placing the simulator in developer mode through simulator security settings.
         - `playbook.sim.password` : Simulator password which can be set through simulator security settings.
-- While in your project directory, in command prompt/terminal type `ant target load-simulator`. Replace `target` with either `blackberry` or `playbook`.  Note, for PlayBook the simulator virtual image must already be started.
-- The application will be installed in the All Applications section in the simulator.  Note, on BlackBerry OS 5 the application is installed in the Downloads folder.
+
+    - Smartphone (Optional)
+        - `blackberry.sim.dir` : Path to directory containing simulator. On windows file separator '\' must be escaped '\\\'.
+        - `blackberry.sim.bin` : Name of the simulator executable in the specified directory.
+
+- While in your project directory, in command prompt/terminal type `ant target load-simulator`. Replace `target` with either `qnx`, `playbook`, or `blackberry`. Note, for BlackBerry 10 and PlayBook, the simulator virtual image must already be started. 
+
+- The application will be installed to the homescreen of the simulator. Note, on BlackBerry OS 5 the application is installed in the Downloads folder.
 
 5B.  Deploy to Device (Windows and Mac)
 --------------------------------------
