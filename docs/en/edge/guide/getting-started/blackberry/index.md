@@ -129,13 +129,13 @@ Smartphone (Optional)
 While in your project directory, in command prompt/terminal type `ant target load-simulator`. Replace `target` with either `qnx`, `playbook`, or `blackberry`. Note, for BlackBerry 10 and PlayBook, the simulator virtual image must already be started.  For example...
 
 BlackBerry 10 (QNX)
-`ant qnx load-simulator`
+- `ant qnx load-simulator`
 
 BlackBerry PlayBook
-`ant playbook load-simulator`
+- `ant playbook load-simulator`
 
 BlackBerry Smartphone (OS5-7)
-`ant blackberry load-simulator`
+- `ant blackberry load-simulator`
 
 The application will be installed to the homescreen of the simulator. Note, on BlackBerry OS 5 the application is installed in the Downloads folder.
 
@@ -143,22 +143,37 @@ The application will be installed to the homescreen of the simulator. Note, on B
 5B.  Deploy to Device (Windows and Mac)
 --------------------------------------
 
-- Deploying to a device requires signing keys which can be obtained from RIM.
-    - Fill out this [form](https://bdsc.webapps.blackberry.com/html5/signingkey). to request signing keys.
-    - Install the signing keys once they have been received:
-        - [Setup Smartphone Signing keys](https://bdsc.webapps.blackberry.com/html5/documentation/ww_publishing/signing_setup_smartphone_apps_1920010_11.html)
-        - [Setup Tablet Signing keys](https://bdsc.webapps.blackberry.com/html5/documentation/ww_publishing/signing_setup_tablet_apps_1920009_11.html)
-- Install [BlackBerry Desktop Sofware](http://us.blackberry.com/apps-software/desktop/) to be able to install a signed application to a smartphone device attached via USB.
+To deploy your app to a device you must have registered for, and setup BlackBerry Code Signing Keys.  See section 3 for details. Also, to deploy apps on BlackBerry 10 or PlayBook, the device must be set to Development Mode which can be enabled from the Settings > Security menu.
+
 - Open the project.properties file with your favorite editor and customize the following properties:
-    - Smartphone (Optional)
-        - `blackberry.sigtool.password` : Password used when code signing keys were registered.  If not specified, a prompt will occur.
-    - Playbook (Required)
-        - `playbook.sigtool.csk.password` : Signing key password.
-        - `playbook.sigtool.p12.password` : Signing key password.
-        - `playbook.device.ip` : IP address of device obtained when placing the device in developer mode through device security settings.
-        - `playbook.device.password` : Device password which is set through device security settings.
-- While in your project directory, in command prompt/terminal type `ant target load-device`. Replace `target` with either `blackberry` or `playbook`.
-- The application will be installed in the All Applications section in the device.  Note, on BlackBerry OS 5 the application is installed in the Downloads folder.
+
+BlackBerry 10 (QNX)
+- `qnx.sigtool.password`
+- `qnx.device.ip`
+- `qnx.device.password`
+
+BlackBerry PlayBook
+- `playbook.sigtool.csk.password`
+- `playbook.sigtool.p12.password`
+- `playbook.device.ip`
+- `playbook.device.password`
+
+BlackBerry Smartphone (OS5-7)
+- Smartphone (Optional)
+- `blackberry.sigtool.password`
+
+- While in your project directory, in command prompt/terminal type `ant target load-device`. Replace `target` with either `qnx`, `playbook`, or `blackberry`.  For example...
+
+BlackBerry 10 (QNX)
+- `ant qnx load-device`
+
+BlackBerry PlayBook
+- `ant playbook load-device`
+
+BlackBerry Smartphone (OS5-7)
+- `ant blackberry load-device`
+
+The application will be installed to the homescreen of the simulator. Note, on BlackBerry OS 5 the application is installed in the Downloads folder.
 
 Additional Information
 ----------------------
@@ -166,5 +181,6 @@ Additional Information
 The following articles provide help to issues you may encounter when developing a Cordova application which is based on the BlackBerry WebWorks framework.
 
 - [BlackBerry WebWorks Development Pitfalls](http://supportforums.blackberry.com/t5/Web-and-WebWorks-Development/Common-BlackBerry-WebWorks-development-pitfalls-that-can-be/ta-p/624712)
+
 - [Best practices for packaging WebWorks applications](https://bdsc.webapps.blackberry.com/html5/documentation/ww_developing/bestpractice_compiling_ww_apps_1873324_11.html)
 
