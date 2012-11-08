@@ -42,10 +42,20 @@ WebWorks applications can ONLY be deployed to the following BlackBerry platforms
 
 2.  Install the WebWorks SDK
 -------------------------
-- [BlackBerry 10] (https://developer.blackberry.com/html5/download/#blackberry10)
+Download and install one or more of the WebWorks SDKs. (Make note of the installation directory)
+
+- [BlackBerry 10 (QNX)] (https://developer.blackberry.com/html5/download/#blackberry10)
 - [BlackBerry PlayBook] (https://developer.blackberry.com/html5/download/#playbook)
 - [BlackBerry Smartphones] (https://developer.blackberry.com/html5/download/#smartphones)
 
+
+3.  Register for Signing Keys
+-------------------------
+If you wish to publish your application on BlackBerry App World, or deploy on an actual device you’ll need to register for a set of free Code Signing Keys.  
+
+To register for Signing Keys [visit, and complete the BlackBerry Keys Order Form.](https://www.blackberry.com/SignedKeys)
+
+Once you receive your Signing Keys, they'll need to be setup. Lean how to setup your Signing Keys [visit the BlackBerry HTML5/WebWorks site.](https://developer.blackberry.com/html5/documentation/signing_setup_bb10_apps_2008396_11.html)
 
 2.  Install SDK + Cordova
 -------------------------
