@@ -20,7 +20,14 @@ license: Licensed to the Apache Software Foundation (ASF) under one
 Getting Started with Blackberry!
 ============================
 
-Cordova for BlackBerry makes use of the [BlackBerry WebWorks framework](https://bdsc.webapps.blackberry.com/html5). BlackBerry WebWorks tooling is available for Windows or Mac environments. WebWorks applications can ONLY be deployed to BlackBerry devices running OS 5.0 and higher or the BlackBerry PlayBook operating system.
+Cordova for BlackBerry makes use of the [BlackBerry WebWorks framework](https://bdsc.webapps.blackberry.com/html5). BlackBerry WebWorks tooling is available for Windows or Mac environments. 
+
+WebWorks applications can ONLY be deployed to the following BlackBerry platforms:
+
+* BlackBerry OS 5.0 and higher
+* BlackBerry PlayBook
+* BlackBerry 10 (QNX)
+
 
 1.  Requirements
 ---------------
@@ -32,6 +39,13 @@ Cordova for BlackBerry makes use of the [BlackBerry WebWorks framework](https://
 -   Apache Ant
     - Windows: [Apache Ant](http://ant.apache.org/bindownload.cgi).
     - Mac OS X: Apache Ant is bundled with Java install.
+
+2.  Install the WebWorks SDK
+-------------------------
+## BlackBerry 10
+
+
+
 
 2.  Install SDK + Cordova
 -------------------------
