@@ -99,7 +99,7 @@ BlackBerry Smartphone (OS5-7)
 `ant blackberry build`
 
 
-5A.  Deploy to Simulator
+7A.  Deploy to Simulator
 --------------------------------------
 
 BlackBerry smartphone simulators are only available on Windows. BlackBerry 10, and PlayBook simulators require VMWare Player (Windows) or VMWare Fusion (Mac OS X). The WebWorks SDK provides a default simulator. Additional simulators are [available](http://us.blackberry.com/developers/resources/simulators.jsp).
