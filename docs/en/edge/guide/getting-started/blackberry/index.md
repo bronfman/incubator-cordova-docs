@@ -17,7 +17,7 @@ license: Licensed to the Apache Software Foundation (ASF) under one
          under the License.
 ---
 
-Getting Started with Blackberry!
+Getting Started with Blackberry
 ============================
 
 Cordova for BlackBerry makes use of the [BlackBerry WebWorks framework](https://bdsc.webapps.blackberry.com/html5). BlackBerry WebWorks tooling is available for Windows or Mac environments. 
@@ -40,31 +40,30 @@ WebWorks applications can ONLY be deployed to the following BlackBerry platforms
     - Windows: [Apache Ant](http://ant.apache.org/bindownload.cgi).
     - Mac OS X: Apache Ant is bundled with Java install.
 
+
 2.  Install the WebWorks SDK
 -------------------------
-Download and install one or more of the WebWorks SDKs. (Make note of the installation directory)
+Download and install the appropriate WebWorks SDKs for your development. BlackBerry 10, BlackBerry PlayBook, and BlackBerry Smartphone WebWorks SDKs can all be downloaded from the following locations.  Please note that BlackBerry PlayBook development requires the Adobe Air SDK as well.
 
-- [BlackBerry 10 (QNX)] (https://developer.blackberry.com/html5/download/#blackberry10)
-- [BlackBerry PlayBook] (https://developer.blackberry.com/html5/download/#playbook)
-- [BlackBerry Smartphones] (https://developer.blackberry.com/html5/download/#smartphones)
+- [BlackBerry 10 (QNX) SDK] (https://developer.blackberry.com/html5/download/#blackberry10)
+- [BlackBerry PlayBook SDK] (https://developer.blackberry.com/html5/download/#playbook) & [Adobe Air SDK](http://www.adobe.com/devnet/air/air-sdk-download.html)
+- [BlackBerry Smartphones SDK] (https://developer.blackberry.com/html5/download/#smartphones)
 
 
 3.  Register for Signing Keys
 -------------------------
 If you wish to publish your application on BlackBerry App World, or deploy on an actual device you’ll need to register for a set of free Code Signing Keys.  
 
-To register for Signing Keys [visit, and complete the BlackBerry Keys Order Form.](https://www.blackberry.com/SignedKeys)
+To register for Signing Keys visit, and complete the [BlackBerry Keys Order Form](https://www.blackberry.com/SignedKeys).
 
-Once you receive your Signing Keys, they'll need to be setup. Lean how to setup your Signing Keys [visit the BlackBerry HTML5/WebWorks site.](https://developer.blackberry.com/html5/documentation/signing_setup_bb10_apps_2008396_11.html)
+Once you receive your Signing Keys, they'll need to be setup. To lean how to setup your Signing Keys visit the [BlackBerry HTML5/WebWorks website](https://developer.blackberry.com/html5/documentation/signing_setup_bb10_apps_2008396_11.html).
 
-2.  Install SDK + Cordova
+
+4.  Install Cordova
 -------------------------
 
-- PlayBook development requires the [Adobe Air SDK](http://www.adobe.com/devnet/air/air-sdk-download.html)
-- Download and install one or more of the WebWorks SDKs. Keep note of the install directory.
-    - Smartphone Development: [BlackBerry WebWorks Smartphone SDK](https://bdsc.webapps.blackberry.com/html5/download/sdk)
-    - PlayBook Development: [BlackBerry WebWorks Tablet OS SDK](https://bdsc.webapps.blackberry.com/html5/download/sdk)
-- Download the latest copy of [Cordova](http://phonegap.com/download) and extract its contents.
+Download the latest copy of [Cordova](http://phonegap.com/download) and extract its contents to your local machine.
+
 
 3.  Setup New Project
 --------------------
@@ -73,7 +72,17 @@ Once you receive your Signing Keys, they'll need to be setup. Lean how to setup 
 - There is a directory for each platform that Cordova supports.  CD into the blackberry directory.
 - The blackberry directory contains two directories, `sample` and `www`.  The `sample` folder contains a complete Cordova project.  Copy the `sample` folder to another location on your computer.
 - Change to the newly created directory.
-- Open up the project.properties file with your favorite editor and edit the entries for `blackberry.bbwp.dir=` and/or `playbook.bbwp.dir=`. Set the  value(s) to the directory containing the `bbwp` binary in the WebWorks SDK(s) installed earlier.
+- Open up the project.properties file with your favorite editor and edit the entries for the WebWorks SDKs you are using, below are examples.
+
+BlackBerry 10
+- qnx.bbwp.dir=C:\\Program Files (x86)\\Research In Motion\\BlackBerry 10 WebWorks SDK 1.0.2.9
+
+BlackBerry PlayBook
+- playbook.bbwp.dir=C:\\Program Files\\Research In Motion\\BlackBerry WebWorks SDK for TabletOS 2.1.0.6\\bbwp
+
+BlackBerry Smartphone (OS5-7)
+- blackberry.bbwp.dir=C:\\Program Files\\Research In Motion\\BlackBerry WebWorks Packager
+
 
 4.  Hello World
 --------------
