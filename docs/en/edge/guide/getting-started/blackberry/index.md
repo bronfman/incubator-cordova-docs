@@ -56,7 +56,7 @@ If you wish to publish your application on BlackBerry App World, or deploy on an
 
 To register for Signing Keys visit, and complete the [BlackBerry Keys Order Form](https://www.blackberry.com/SignedKeys).
 
-Once you receive your Signing Keys, they'll need to be setup. To lean how to setup your Signing Keys visit the [BlackBerry HTML5/WebWorks website](https://developer.blackberry.com/html5/documentation/signing_setup_bb10_apps_2008396_11.html).
+Once you receive your Signing Keys, they'll need to be setup. To learn how to setup your Signing Keys visit the [BlackBerry HTML5/WebWorks website](https://developer.blackberry.com/html5/documentation/signing_setup_bb10_apps_2008396_11.html).
 
 
 4.  Install Cordova
@@ -137,7 +137,7 @@ BlackBerry PlayBook
 BlackBerry Smartphone (OS5-7)
 - `ant blackberry load-simulator`
 
-The application will be installed to the homescreen of the simulator. Note, on BlackBerry OS 5 the application is installed in the Downloads folder.
+The application will be installed to the home screen of the simulator. Note, on BlackBerry OS 5 the application is installed in the Downloads folder.
 
 
 7B.  Deploy to Device (Windows and Mac)
@@ -173,7 +173,7 @@ BlackBerry PlayBook
 BlackBerry Smartphone (OS5-7)
 - `ant blackberry load-device`
 
-The application will be installed to the homescreen of the device. Note, on BlackBerry OS 5 the application is installed in the Downloads folder.
+The application will be installed to the home screen of the device. Note, on BlackBerry OS 5 the application is installed in the Downloads folder.
 
 Additional Information
 ----------------------
