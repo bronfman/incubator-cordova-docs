@@ -178,9 +178,9 @@ The application will be installed to the home screen of the device. Note, on Bla
 Additional Information
 ----------------------
 
-The following articles provide help to issues you may encounter when developing a Cordova application which is based on the BlackBerry WebWorks framework.
+The following articles provide help to issues you may encounter when developing a Cordova application which is based on the BlackBerry WebWorks framework
 
 - [BlackBerry WebWorks Development Pitfalls](http://supportforums.blackberry.com/t5/Web-and-WebWorks-Development/Common-BlackBerry-WebWorks-development-pitfalls-that-can-be/ta-p/624712)
 
-- [Best practices for packaging WebWorks applications](https://bdsc.webapps.blackberry.com/html5/documentation/ww_developing/bestpractice_compiling_ww_apps_1873324_11.html)
+- [Best practices for packaging WebWorks applications](https://bdsc.webapps.blackberrycom/html5/documentation/ww_developing/bestpractice_compiling_ww_apps_1873324_11.html)
 
