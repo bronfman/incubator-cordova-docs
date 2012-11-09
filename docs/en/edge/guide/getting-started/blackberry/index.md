@@ -140,7 +140,7 @@ BlackBerry Smartphone (OS5-7)
 The application will be installed to the homescreen of the simulator. Note, on BlackBerry OS 5 the application is installed in the Downloads folder.
 
 
-5B.  Deploy to Device (Windows and Mac)
+7B.  Deploy to Device (Windows and Mac)
 --------------------------------------
 
 To deploy your app to a device you must have registered for, and setup BlackBerry Code Signing Keys.  See section 3 for details. Also, to deploy apps on BlackBerry 10 or PlayBook, the device must be set to Development Mode which can be enabled from the Settings > Security menu.
@@ -162,7 +162,7 @@ BlackBerry Smartphone (OS5-7)
 - Smartphone (Optional)
 - `blackberry.sigtool.password`
 
-- While in your project directory, in command prompt/terminal type `ant target load-device`. Replace `target` with either `qnx`, `playbook`, or `blackberry`.  For example...
+While in your project directory, in command prompt/terminal type `ant target load-device`. Replace `target` with either `qnx`, `playbook`, or `blackberry`.  For example...
 
 BlackBerry 10 (QNX)
 - `ant qnx load-device`
@@ -173,7 +173,7 @@ BlackBerry PlayBook
 BlackBerry Smartphone (OS5-7)
 - `ant blackberry load-device`
 
-The application will be installed to the homescreen of the simulator. Note, on BlackBerry OS 5 the application is installed in the Downloads folder.
+The application will be installed to the homescreen of the device. Note, on BlackBerry OS 5 the application is installed in the Downloads folder.
 
 Additional Information
 ----------------------
